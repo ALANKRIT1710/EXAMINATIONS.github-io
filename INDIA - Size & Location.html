@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: aquamarine;
+      }
+      h1 {
+        float: inline-start;
+        font-weight: bolder;
+        font-family: Arial;
+        font-size: larger;
+        color: red;
+        font-style: italic;
+      }
+      /* Style the tab */
+      .tab {
+        overflow: hidden;
+      }
+
+      /* Style the buttons inside the tab */
+      .tab button {
+        background-color: yellow;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 8px px;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: lime;
+      }
+
+      /* Create an active/current tablink class */
+      .tab button.active {
+        background-color: lime;
+      }
+
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+      }
+      h5 {
+        float: right;
+        font-variant: small-caps;
+        font-style: italic;
+      }
+      li {
+          text-transform: none;
+      }
+    </style>
+  </head>
+  <body>
+    <i>
+      <h5><u>OWNER&nbsp; :&nbsp; ALANKRIT SINGH IX-C</u></h2>
+      <h1><center>INDIA - SIZE & LOCATION</center></h5>
+      <h2>
+        <ol type="1">
+          <li>
+            India is a ......... most developed country in the field of IT.
+          </li>
+          <ol type="a">
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Fourth</li>
+            <br />
+          </ol>
+          <div class="tab">
+            <button class="tablinks" onclick="openAnswer(event, 'ANSWER')">
+              ANSWER
+            </button>
+          </div>
+          <div id="ANSWER" class="tabcontent">
+            <h4><small>c).Third</small></h4>
+          </div>
+          <script>
+            function openAnswer(evt, ANSWER) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(
+                  " active",
+                  ""
+                );
+              }
+              document.getElementById(ANSWER).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+          </script>
+
+          <br /><br />
+          <li>
+            Andaman and Nicobar island extent .......
+          </li>
+          <ol type="a">
+            <li>14 degree N to 6 degree N</li>
+            <li>28 degree N to 7 degree N</li>
+            <li>18 degree N to 9 degree N</li>
+            <li>16 degree N to 8 degree N</li>
+            <br />
+          </ol>
+          <div class="tab">
+            <button class="tablinks" onclick="openAnswer1(event, 'ANSWER1')">
+              ANSWER
+            </button>
+          </div>
+          <div id="ANSWER1" class="tabcontent">
+            <h4><small>a).14 degree N to 6 degree N</small></h4>
+          </div>
+          <script>
+            function openAnswer1(evt, ANSWER1) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(
+                  " active",
+                  ""
+                );
+              }
+              document.getElementById(ANSWER1).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+          </script>
+          <br /><br />
+          <li>
+            India is located in which part of the word ?
+          </li>
+          <ol type="a">
+            <li>Northern</li>
+            <li>Southern</li>
+            <li>Eastern</li>
+            <li>None of These</li>
+            <br />
+          </ol>
+          <div class="tab">
+            <button class="tablinks" onclick="openAnswer3(event, 'ANSWER3')">
+              ANSWER
+            </button>
+          </div>
+          <div id="ANSWER3" class="tabcontent">
+            <h4><small>c).Eastern</small></h4>
+          </div>
+          <script>
+            function openAnswer3(evt, ANSWER3) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(
+                  " active",
+                  ""
+                );
+              }
+              document.getElementById(ANSWER3).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+          </script>
+          <br /><br />
+          <li>
+            Area of india according to compare total geographical area of the word.
+          </li>
+          <ol type="a">
+            <li>1.8%</li>
+            <li>4.2%</li>
+            <li>2.4%</li>
+            <li>3.28%</li>
+            <br />
+          </ol>
+          <div class="tab">
+            <button class="tablinks" onclick="openAnswer4(event, 'ANSWER4')">
+              ANSWER
+            </button>
+          </div>
+          <div id="ANSWER4" class="tabcontent">
+            <h4><small>c). 2.4%</small></h4>
+          </div>
+          <script>
+            function openAnswer4(evt, ANSWER4) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(
+                  " active",
+                  ""
+                );
+              }
+              document.getElementById(ANSWER4).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+          </script>
+          <br /><br />
+          <li>
+            On the north india is bounded by ...............
+          </li>
+          <ol type="a">
+            <li>Indian Ocean</li>
+            <li>Young Fold Mountains</li>
+            <li>>Mountain ranges of north</li>
+            <li>None of these</li>
+            <br />
+          </ol>
+          <div class="tab">
+            <button class="tablinks" onclick="openAnswer5(event, 'ANSWER5')">
+              ANSWER
+            </button>
+          </div>
+          <div id="ANSWER5" class="tabcontent">
+            <h4><small>b).Young Fold Mountains</small></h4>
+          </div>
+          <script>
+            function openAnswer5(evt, ANSWER5) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(
+                  " active",
+                  ""
+                );
+              }
+              document.getElementById(ANSWER5).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+          </script>
+              
+              <li>
+                Greenwich is located in ............
+              </li>
+              <ol type="a">
+                <li>UK</li>
+                <li>England</li>
+                <li>New Zeland</li>
+                <li>Greenland</li>
+                <br />
+              </ol>
+              <div class="tab">
+                <button class="tablinks" onclick="openAnswer05(event, 'ANSWER05')">
+                  ANSWER
+                </button>
+              </div>
+              <div id="ANSWER05" class="tabcontent">
+                <h4><small>b).England</small></h4>
+              </div>
+              <script>
+                function openAnswer05(evt, ANSWER05) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(
+                      " active",
+                      ""
+                    );
+                  }
+                  document.getElementById(ANSWER05).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+              </script>
+              <br /><br />
+
+              <li>
+               Each zone is how much wide ?
+              </li>
+              <ol type="a">
+                <li>30 degree</li>
+                <li>15 degree</li>
+                <li>60 degree</li>
+                <li>4 degree</li>
+                <br />
+              </ol>
+              <div class="tab">
+                <button class="tablinks" onclick="openAnswer6(event, 'ANSWER6')">
+                  ANSWER
+                </button>
+              </div>
+              <div id="ANSWER6" class="tabcontent">
+                <h4><small>b). 15</small></h4>
+              </div>
+              <script>
+                function openAnswer6(evt, ANSWER6) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(
+                      " active",
+                      ""
+                    );
+                  }
+                  document.getElementById(ANSWER6).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+              </script>
+              <br /><br />
+
+              <li>
+                Which contacts of india from the word is the oldest route ?
+              </li>
+              <ol type="a">
+                <li>Land</li>
+                <li>Water</li>
+                <li>Mountains</li>
+                <li>None of These</li>
+                <br />
+              </ol>
+              <div class="tab">
+                <button class="tablinks" onclick="openAnswer7(event, 'ANSWER7')">
+                  ANSWER
+                </button>
+              </div>
+              <div id="ANSWER7" class="tabcontent">
+                <h4><small>a).Land</small></h4>
+              </div>
+              <script>
+                function openAnswer7(evt, ANSWER7) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(
+                      " active",
+                      ""
+                    );
+                  }
+                  document.getElementById(ANSWER7).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+              </script>
+              <br /><br />
+
+              <li>
+               In which year Vasco da gama discovered sea route to India ?
+              </li>
+              <ol type="a">
+                <li>1511</li>
+                <li>1468</li>
+                <li>1509</li>
+                <li>1498</li>
+                <br />
+              </ol>
+              <div class="tab">
+                <button class="tablinks" onclick="openAnswer8(event, 'ANSWER8')">
+                  ANSWER
+                </button>
+              </div>
+              <div id="ANSWER8" class="tabcontent">
+                <h4><small>d).1498</small></h4>
+              </div>
+              <script>
+                function openAnswer8(evt, ANSWER8) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(
+                      " active",
+                      ""
+                    );
+                  }
+                  document.getElementById(ANSWER8).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+              </script>
+              <br /><br />
+
+              <li>
+                Architectual innovations were bought by whome in 13th centuary in india as well as in the whole world .
+              </li>
+              <ol type="a">
+                <li>Hindu</li>
+                <li>Muslim</li>
+                <li>Shiks</li>
+                <li>British</li>
+                <br />
+              </ol>
+              <div class="tab">
+                <button class="tablinks" onclick="openAnswer10(event, 'ANSWER10')">
+                  ANSWER
+                </button>
+              </div>
+              <div id="ANSWER10" class="tabcontent">
+                <h4><small>b).21 Jan,1793</small></h4>
+              </div>
+              <script>
+                function openAnswer10(evt, ANSWER10) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(
+                      " active",
+                      ""
+                    );
+                  }
+                  document.getElementById(ANSWER10).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+              </script>
+             
+      </ol>
+      </h2></i
+    >
+    <hr size="5" color="lime" />
+  </body>
+</html>

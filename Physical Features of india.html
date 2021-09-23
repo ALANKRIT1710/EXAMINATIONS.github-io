@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: aquamarine;
+      }
+      h1 {
+        float: inline-start;
+        font-weight: bolder;
+        font-family: Arial;
+        font-size: larger;
+        color: red;
+        font-style: italic;
+      }
+      /* Style the tab */
+      .tab {
+        overflow: hidden;
+      }
+
+      /* Style the buttons inside the tab */
+      .tab button {
+        background-color: yellow;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 8px px;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: lime;
+      }
+
+      /* Create an active/current tablink class */
+      .tab button.active {
+        background-color: lime;
+      }
+
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+      }
+      h5 {
+        float: right;
+        font-variant: small-caps;
+        font-style: italic;
+      }
+      li {
+          text-transform: none;
+      }
+    </style>
+  </head>
+  <body>
+    <i>
+      <h5><u>OWNER&nbsp; :&nbsp; ALANKRIT SINGH IX-C</u></h2>
+      <h1><center>Physical Peatures of India</center></h5>
+      <h2>
+        <ol type="1">
+          <li>
+            Depth of the lithosphere below the ocean level ..... kms.
+          </li>
+          <ol type="a">
+            <li>110 - 200</li>
+            <li>100 - 150</li>
+            <li>200 - 250</li>
+            <li>70 - 80</li>
+            <br />
+          </ol>
+          <div class="tab">
+            <button class="tablinks" onclick="openAnswer(event, 'ANSWER')">
+              ANSWER
+            </button>
+          </div>
+          <div id="ANSWER" class="tabcontent">
+            <h4><small>d).70 - 80 kms</small></h4>
+          </div>
+          <script>
+            function openAnswer(evt, ANSWER) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(
+                  " active",
+                  ""
+                );
+              }
+              document.getElementById(ANSWER).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+          </script>
+
+          <br /><br />
+          <li>
+            Himalayan range contain ..... out of 10 highest peak in the word.
+          </li>
+          <ol type="a">
+            <li>4</li>
+            <li>8</li>
+            <li>9</li>
+            <li>6</li>
+            <br />
+          </ol>
+          <div class="tab">
+            <button class="tablinks" onclick="openAnswer1(event, 'ANSWER1')">
+              ANSWER
+            </button>
+          </div>
+          <div id="ANSWER1" class="tabcontent">
+            <h4><small>c).9</small></h4>
+          </div>
+          <script>
+            function openAnswer1(evt, ANSWER1) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(
+                  " active",
+                  ""
+                );
+              }
+              document.getElementById(ANSWER1).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+          </script>
+          <br /><br />
+          <li>
+            Most rugged mountain system .
+          </li>
+          <ol type="a">
+            <li>Himachal</li>
+            <li>Himadri</li>
+            <li>Shiwalik</li>
+            <li>None of These</li>
+            <br />
+          </ol>
+          <div class="tab">
+            <button class="tablinks" onclick="openAnswer3(event, 'ANSWER3')">
+              ANSWER
+            </button>
+          </div>
+          <div id="ANSWER3" class="tabcontent">
+            <h4><small>a).Himachal</small></h4>
+          </div>
+          <script>
+            function openAnswer3(evt, ANSWER3) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(
+                  " active",
+                  ""
+                );
+              }
+              document.getElementById(ANSWER3).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+          </script>
+          <br /><br />
+          <li>
+            Large number of flat bottomed valleys known as .........
+          </li>
+          <ol type="a">
+            <li>Kali</li>
+            <li>Tista</li>
+            <li>Duns</li>
+            <li>Dhar</li>
+            <br />
+          </ol>
+          <div class="tab">
+            <button class="tablinks" onclick="openAnswer4(event, 'ANSWER4')">
+              ANSWER
+            </button>
+          </div>
+          <div id="ANSWER4" class="tabcontent">
+            <h4><small>c).Duns</small></h4>
+          </div>
+          <script>
+            function openAnswer4(evt, ANSWER4) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(
+                  " active",
+                  ""
+                );
+              }
+              document.getElementById(ANSWER4).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+          </script>
+          <br /><br />
+          <li>
+            Height of K2 ......m .
+          </li>
+          <ol type="a">
+            <li>7,948</li>
+            <li>8,110</li>
+            <li>8,320</li>
+            <li>8,611</li>
+            <br />
+          </ol>
+          <div class="tab">
+            <button class="tablinks" onclick="openAnswer5(event, 'ANSWER5')">
+              ANSWER
+            </button>
+          </div>
+          <div id="ANSWER5" class="tabcontent">
+            <h4><small>d).8,611 m</small></h4>
+          </div>
+          <script>
+            function openAnswer5(evt, ANSWER5) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(
+                  " active",
+                  ""
+                );
+              }
+              document.getElementById(ANSWER5).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+          </script>
+              
+              <li>
+                Himalayan region encompassed of ......... glaciers.
+              </li>
+              <ol type="a">
+                <li>10,000</li>
+                <li>15,000</li>
+                <li>20,000</li>
+                <li>25,000</li>
+                <br />
+              </ol>
+              <div class="tab">
+                <button class="tablinks" onclick="openAnswer05(event, 'ANSWER05')">
+                  ANSWER
+                </button>
+              </div>
+              <div id="ANSWER05" class="tabcontent">
+                <h4><small>b).15,000</small></h4>
+              </div>
+              <script>
+                function openAnswer05(evt, ANSWER05) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(
+                      " active",
+                      ""
+                    );
+                  }
+                  document.getElementById(ANSWER05).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+              </script>
+              <br /><br />
+
+              <li>
+               Second largest glacier 'Siachen glacier' in the world is located at ......................
+              </li>
+              <ol type="a">
+                <li>India - China</li>
+                <li>India - Pakistan</li>
+                <li>India - Afganistan</li>
+                <li>India - Bangladesh</li>
+                <br />
+              </ol>
+              <div class="tab">
+                <button class="tablinks" onclick="openAnswer6(event, 'ANSWER6')">
+                  ANSWER
+                </button>
+              </div>
+              <div id="ANSWER6" class="tabcontent">
+                <h4><small>b).India - Pakistan</small></h4>
+              </div>
+              <script>
+                function openAnswer6(evt, ANSWER6) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(
+                      " active",
+                      ""
+                    );
+                  }
+                  document.getElementById(ANSWER6).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+              </script>
+              <br /><br />
+
+              <li>
+               Which plain enters at Haridwar ?
+              </li>
+              <ol type="a">
+                <li>Coastal Plainu</li>
+                <li>Yamuna Plain</li>
+                <li>Ganga Plain</li>
+                <li>None of These</li>
+                <br />
+              </ol>
+              <div class="tab">
+                <button class="tablinks" onclick="openAnswer7(event, 'ANSWER7')">
+                  ANSWER
+                </button>
+              </div>
+              <div id="ANSWER7" class="tabcontent">
+                <h4><small>c).Ganga Plain</small></h4>
+              </div>
+              <script>
+                function openAnswer7(evt, ANSWER7) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(
+                      " active",
+                      ""
+                    );
+                  }
+                  document.getElementById(ANSWER7).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+              </script>
+              <br /><br />
+
+              <li>
+                Oldest Landmass ...............
+              </li>
+              <ol type="a">
+                <li>Angaraland</li>
+                <li>Godwanaland</li>
+                <li>Peninsular Land</li>
+                <li>None ot These</li>
+                <br />
+              </ol>
+              <div class="tab">
+                <button class="tablinks" onclick="openAnswer8(event, 'ANSWER8')">
+                  ANSWER
+                </button>
+              </div>
+              <div id="ANSWER8" class="tabcontent">
+                <h4><small>b).Godwanaland</small></h4>
+              </div>
+              <script>
+                function openAnswer8(evt, ANSWER8) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(
+                      " active",
+                      ""
+                    );
+                  }
+                  document.getElementById(ANSWER8).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+              </script>
+              <br /><br />
+
+              <li>
+                Group of Islands in the Bay of Bengal.
+              </li>
+              <ol type="a">
+                <li>432</li>
+                <li>572</li>
+                <li>682</li>
+                <li>362</li>
+                <br />
+              </ol>
+              <div class="tab">
+                <button class="tablinks" onclick="openAnswer10(event, 'ANSWER10')">
+                  ANSWER
+                </button>
+              </div>
+              <div id="ANSWER10" class="tabcontent">
+                <h4><small>b).572</small></h4>
+              </div>
+              <script>
+                function openAnswer10(evt, ANSWER10) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(
+                      " active",
+                      ""
+                    );
+                  }
+                  document.getElementById(ANSWER10).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+              </script>
+             
+      </ol>
+      </h2></i
+    >
+    <hr size="5" color="lime" />
+  </body>
+</html>
